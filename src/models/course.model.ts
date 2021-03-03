@@ -16,10 +16,10 @@ export class Course extends Entity {
   semester: string;
 
   @property({
-    type: 'number',
+    type: 'string',
     required: true,
   })
-  year: number;
+  year: string;
 
   @property({
     type: 'string',

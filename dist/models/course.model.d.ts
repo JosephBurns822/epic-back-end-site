@@ -1,8 +1,8 @@
 import { Entity } from '@loopback/repository';
 export declare class Course extends Entity {
-    _id?: string;
+    _id?: number;
     semester: string;
-    year: number;
+    year: string;
     prefix: string;
     number: string;
     section?: string;

@@ -14,7 +14,7 @@ tslib_1.__decorate([
         id: true,
         generated: true,
     }),
-    tslib_1.__metadata("design:type", String)
+    tslib_1.__metadata("design:type", Number)
 ], Course.prototype, "_id", void 0);
 tslib_1.__decorate([
     repository_1.property({
@@ -25,10 +25,10 @@ tslib_1.__decorate([
 ], Course.prototype, "semester", void 0);
 tslib_1.__decorate([
     repository_1.property({
-        type: 'number',
+        type: 'string',
         required: true,
     }),
-    tslib_1.__metadata("design:type", Number)
+    tslib_1.__metadata("design:type", String)
 ], Course.prototype, "year", void 0);
 tslib_1.__decorate([
     repository_1.property({

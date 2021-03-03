@@ -8,8 +8,8 @@ export declare class CourseController {
     count(where?: Where<Course>): Promise<Count>;
     find(filter?: Filter<Course>): Promise<Course[]>;
     updateAll(course: Course, where?: Where<Course>): Promise<Count>;
-    findById(id: string, filter?: FilterExcludingWhere<Course>): Promise<Course>;
-    updateById(id: string, course: Course): Promise<void>;
-    replaceById(id: string, course: Course): Promise<void>;
-    deleteById(id: string): Promise<void>;
+    findById(id: number, filter?: FilterExcludingWhere<Course>): Promise<Course>;
+    updateById(id: number, course: Course): Promise<void>;
+    replaceById(id: number, course: Course): Promise<void>;
+    deleteById(id: number): Promise<void>;
 }
