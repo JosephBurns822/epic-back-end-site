@@ -105,7 +105,7 @@ export class CourseController {
     },
   })
   async findById(
-    @param.path.string('id') id: string,
+    @param.path.string('id') id: number,
     @param.filter(Course, {exclude: 'where'}) filter?: FilterExcludingWhere<Course>
   ): Promise<Course> {
     return this.courseRepository.findById(id, filter);
@@ -116,7 +116,7 @@ export class CourseController {
     description: 'Course PATCH success',
   })
   async updateById(
-    @param.path.string('id') id: string,
+    @param.path.string('id') id: number,
     @requestBody({
       content: {
         'application/json': {
@@ -134,7 +134,7 @@ export class CourseController {
     description: 'Course PUT success',
   })
   async replaceById(
-    @param.path.string('id') id: string,
+    @param.path.string('id') id: number,
     @requestBody() course: Course,
   ): Promise<void> {
     await this.courseRepository.replaceById(id, course);
@@ -144,7 +144,7 @@ export class CourseController {
   @response(204, {
     description: 'Course DELETE success',
   })
-  async deleteById(@param.path.string('id') id: string): Promise<void> {
+  async deleteById(@param.path.string('id') id: number): Promise<void> {
     await this.courseRepository.deleteById(id);
   }
 }
