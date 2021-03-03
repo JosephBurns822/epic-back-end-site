@@ -4,4 +4,5 @@ const tslib_1 = require("tslib");
 tslib_1.__exportStar(require("./ping.controller"), exports);
 tslib_1.__exportStar(require("./faculty.controller"), exports);
 tslib_1.__exportStar(require("./login.controller"), exports);
+tslib_1.__exportStar(require("./course.controller"), exports);
 //# sourceMappingURL=index.js.map

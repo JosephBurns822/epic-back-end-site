@@ -3,17 +3,17 @@ import {Entity, model, property} from '@loopback/repository';
 @model()
 export class Course extends Entity {
   @property({
-    type: 'string',
-    required: true,
-  })
-  semester: string;
-
-  @property({
     type: 'number',
     id: true,
     generated: true,
   })
   _id?: string;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  semester: string;
 
   @property({
     type: 'number',
